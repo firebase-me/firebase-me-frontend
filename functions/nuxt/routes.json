@@ -1,0 +1,16 @@
+[
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_5f97df4e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7ca2e046"
+  }
+]

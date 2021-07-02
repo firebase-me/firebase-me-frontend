@@ -7,23 +7,31 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "clean1": "rimraf nuxt/*",
+    "clean2": "node rimraf_glob.js nuxt/*",
+    "copyNuxt": "ncp ../source/.nuxt/ nuxt/",
+    "copyConfig": "ncp ../source/nuxt.config.js ./"
   },
   "engines": {
     "node": "14"
   },
   "main": "index.js",
   "dependencies": {
+    "core-js": "^3.15.1",
     "firebase-admin": "^9.8.0",
     "firebase-functions": "^3.14.1",
-    "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "nuxt-buefy": "^0.4.8"
+    "nuxt-buefy": "^0.4.8",
+    "nuxt-start": "^2.15.7"
   },
   "devDependencies": {
     "eslint": "^7.6.0",
     "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
+    "firebase-functions-test": "^0.2.0",
+    "glob": "latest",
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.2"
   },
   "private": true
 }
