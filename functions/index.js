@@ -1,8 +1,7 @@
-import * as functions from "firebase-functions";
-// https://typescript.nuxtjs.org/guide/setup/
+const functions = require('firebase-functions')
+const { Nuxt } = require('nuxt-start')
 
-import {Nuxt} from "nuxt-start";
-import nuxtConfig from './../../nuxt.config';
+const nuxtConfig = require('./nuxt.config.js')
 
 const config = {
   ...nuxtConfig,

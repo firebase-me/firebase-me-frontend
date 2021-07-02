@@ -2,11 +2,7 @@
   "functions": {
     "source": "source/functions",
     "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint",
-      "npm --prefix \"$RESOURCE_DIR\" run build",
-      "rm -rf source/functions/nuxt",
-      "cp -r source/.nuxt/ source/functions/nuxt/",
-      "cp -r source/nuxt.config.js source/functions/"
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
   },
   "hosting": {
