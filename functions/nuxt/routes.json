@@ -1,10 +1,73 @@
 [
   {
+    "name": "article",
+    "path": "/article",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\article.vue",
+    "chunkName": "pages/article",
+    "_name": "_01dc692c"
+  },
+  {
+    "name": "editor",
+    "path": "/editor",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\editor.vue",
+    "chunkName": "pages/editor",
+    "_name": "_dde759ae"
+  },
+  {
     "name": "inspire",
     "path": "/inspire",
     "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\inspire.vue",
     "chunkName": "pages/inspire",
     "_name": "_5f97df4e"
+  },
+  {
+    "name": "services",
+    "path": "/services",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\services.vue",
+    "chunkName": "pages/services",
+    "_name": "_13c9889a"
+  },
+  {
+    "name": "admin-articles",
+    "path": "/admin/articles",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\articles.vue",
+    "chunkName": "pages/admin/articles",
+    "_name": "_2f5691c0"
+  },
+  {
+    "name": "admin-main",
+    "path": "/admin/main",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\main.vue",
+    "chunkName": "pages/admin/main",
+    "_name": "_71cb14bc"
+  },
+  {
+    "name": "admin-navigation",
+    "path": "/admin/navigation",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\navigation.vue",
+    "chunkName": "pages/admin/navigation",
+    "_name": "_4aaed757"
+  },
+  {
+    "name": "profile-main",
+    "path": "/profile/main",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\main.vue",
+    "chunkName": "pages/profile/main",
+    "_name": "_e497a8d4"
+  },
+  {
+    "name": "profile-messages",
+    "path": "/profile/messages",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\messages.vue",
+    "chunkName": "pages/profile/messages",
+    "_name": "_3b9cbb29"
+  },
+  {
+    "name": "profile-projects",
+    "path": "/profile/projects",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\projects.vue",
+    "chunkName": "pages/profile/projects",
+    "_name": "_7f74e952"
   },
   {
     "name": "index",
