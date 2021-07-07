@@ -1,53 +1,77 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub-Change Test
-        </a>
-      </card>
+    <section>
+        <b-field>
+            <b-input placeholder="Search..."
+                type="search"
+                icon="magnify"
+                icon-clickable
+                @icon-click="searchIconClick">
+            </b-input>
+        </b-field>
 
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
+        <div class="dashboard">
+          <img
+                src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png"
+                alt="Lightweight UI components for Vue.js based on Bulma"
+                class="dashboard-logo"
+            />
+          <h1 class="firebase-title">Firebase.me</h1>
+          <p class="mt-50">
+            An online resource for Google Firebase, with community written<br> Guides and Documentation enhancements.
+          </p>
+          <p class="mt-50">
+            Firebase.me also supports dedicated tools to assist with your<br> firebase projects, including managing custom claims and more.
+          </p>
+          <p>
+            Subscribe for $5 a month, stop any time.
+          </p>
+          
+        </div>
 
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
-    </div>
-  </section>
+        <Footer />
+    </section>
 </template>
 
 <script>
-import Card from '~/components/Card'
+    import Footer from '~/components/Footer';
 
-export default {
-  name: 'HomePage',
+    export default {
+        data() {
+            return {
+                email: '',
+            }
+        },
+        methods: {
+            searchIconClick() {
+                alert('You wanna make a search?')
+            },
+            clearIconClick() {
+                this.email = '';
+                alert('Email cleared!')
+            }
+        }
+    }
+</script>
 
-  components: {
-    Card
+<style lang="scss">
+.field {
+  div {
+    input {
+      width : 20rem;
+    }
   }
 }
-</script>
+.dashboard{
+  text-align: center;
+}
+.dashboard-logo{
+  height: 10rem;
+}
+.mt-50{
+  margin-top: 3rem;
+}
+.firebase-title{
+  font-size: 2rem;
+  font-weight: 500;
+}
+</style>

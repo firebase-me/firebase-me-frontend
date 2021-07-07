@@ -2,78 +2,78 @@
   {
     "name": "article",
     "path": "/article",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\article.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\article.vue",
     "chunkName": "pages/article",
-    "_name": "_01dc692c"
+    "_name": "_1d9db5a4"
   },
   {
     "name": "editor",
     "path": "/editor",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\editor.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\editor.vue",
     "chunkName": "pages/editor",
-    "_name": "_dde759ae"
+    "_name": "_36c58ca2"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\inspire.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\inspire.vue",
     "chunkName": "pages/inspire",
-    "_name": "_5f97df4e"
+    "_name": "_7e23c988"
   },
   {
     "name": "services",
     "path": "/services",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\services.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\services.vue",
     "chunkName": "pages/services",
-    "_name": "_13c9889a"
+    "_name": "_728a34c0"
   },
   {
     "name": "admin-articles",
     "path": "/admin/articles",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\articles.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\articles.vue",
     "chunkName": "pages/admin/articles",
-    "_name": "_2f5691c0"
+    "_name": "_904cbc0c"
   },
   {
     "name": "admin-main",
     "path": "/admin/main",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\main.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\main.vue",
     "chunkName": "pages/admin/main",
-    "_name": "_71cb14bc"
+    "_name": "_378351f6"
   },
   {
     "name": "admin-navigation",
     "path": "/admin/navigation",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\navigation.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\navigation.vue",
     "chunkName": "pages/admin/navigation",
-    "_name": "_4aaed757"
+    "_name": "_82a27dde"
   },
   {
     "name": "profile-main",
     "path": "/profile/main",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\main.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\main.vue",
     "chunkName": "pages/profile/main",
-    "_name": "_e497a8d4"
+    "_name": "_735bfb60"
   },
   {
     "name": "profile-messages",
     "path": "/profile/messages",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\messages.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\messages.vue",
     "chunkName": "pages/profile/messages",
-    "_name": "_3b9cbb29"
+    "_name": "_a0c6b63a"
   },
   {
     "name": "profile-projects",
     "path": "/profile/projects",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\projects.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\projects.vue",
     "chunkName": "pages/profile/projects",
-    "_name": "_7f74e952"
+    "_name": "_34457511"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\index.vue",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_7ca2e046"
+    "_name": "_0bb81100"
   }
 ]
