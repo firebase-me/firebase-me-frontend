@@ -25,6 +25,7 @@
     // left: 0;
     position: absolute;
     padding-top: 1rem;
+    margin-left: -0.75rem;
 
     p {
         color: white;

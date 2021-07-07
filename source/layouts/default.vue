@@ -56,23 +56,23 @@
                     <b-menu class="is-custom-mobile">
                         <b-menu-list label="">
                             <b-menu-item active expanded icon="bookmark" label="FAQ">
-                                <b-menu-item icon="book" label="What is Firebase"></b-menu-item>
-                                <b-menu-item icon="cellphone-link" label="Find the right Database"></b-menu-item>
-                                <b-menu-item icon="cellphone-link" label="Hidden Billing Coats"></b-menu-item>
+                                <b-menu-item icon="check" label="What is Firebase"></b-menu-item>
+                                <b-menu-item icon="check" label="Find the right Database"></b-menu-item>
+                                <b-menu-item icon="check" label="Hidden Billing Coats"></b-menu-item>
                             </b-menu-item>
                             <b-menu-item icon="book" label="Documentation">
-                                <b-menu-item icon="account" label="Rest API"></b-menu-item>
-                                <b-menu-item icon="cellphone-link" label="Realtime Transactions"></b-menu-item>
+                                <b-menu-item icon="check" label="Rest API"></b-menu-item>
+                                <b-menu-item icon="check" label="Realtime Transactions"></b-menu-item>
                             </b-menu-item>
                             <b-menu-item icon="book-open" label="Guides">
-                                <b-menu-item icon="account-box" label="Optimising database reads"></b-menu-item>
-                                <b-menu-item icon="home-account" label="Manage custom claims"></b-menu-item>
-                                <b-menu-item icon="home-account" label="Send custom e-mails"></b-menu-item>
+                                <b-menu-item icon="check" label="Optimising database reads"></b-menu-item>
+                                <b-menu-item icon="check" label="Manage custom claims"></b-menu-item>
+                                <b-menu-item icon="check" label="Send custom e-mails"></b-menu-item>
                             </b-menu-item>
                             <b-menu-item icon="tools" label="Tools">
-                                <b-menu-item icon="account-box" label="Rules Sandbox"></b-menu-item>
-                                <b-menu-item icon="home-account" label="Custom Schedules"></b-menu-item>
-                                <b-menu-item icon="home-account" label="Firestore Import/Expert"></b-menu-item>
+                                <b-menu-item icon="check" label="Rules Sandbox"></b-menu-item>
+                                <b-menu-item icon="check" label="Custom Schedules"></b-menu-item>
+                                <b-menu-item icon="check" label="Firestore Import/Expert"></b-menu-item>
                             </b-menu-item>
                         </b-menu-list>
                         <b-switch class="switch-channel" v-model="reduce" />
@@ -111,11 +111,16 @@ export default {
 </script>
 
 <style lang="scss">
+html, body
+{
+    height: 100%;
+}
 .p-1 {
   padding: 1em;
   background-color: #666666;
   border: 2px solid black;
-  height: 45rem;
+  // height: 46rem;
+  height: 100vh;
   .user-logo{
     margin-left: 1rem;
   }
@@ -170,12 +175,23 @@ export default {
     }
 }
 
+.icon {
+  i {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 1023px) {
     .b-sidebar {
         .sidebar-content {
             &.is-mini-mobile {
                 &:not(.is-mini-expand),
                 &.is-mini-expand:not(:hover):not(.is-mini-delayed) {
+                    .icon {
+                      i {
+                        font-size: 1.7rem;
+                      }
+                    }
                     .signin {
                       display: none;
                     }
@@ -222,6 +238,11 @@ export default {
             &.is-mini {
                 &:not(.is-mini-expand),
                 &.is-mini-expand:not(:hover):not(.is-mini-delayed) {
+                    .icon {
+                      i {
+                        font-size: 1.7rem;
+                      }
+                    }
                     .signin {
                       display: none;
                     }
