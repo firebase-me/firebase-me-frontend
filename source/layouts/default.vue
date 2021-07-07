@@ -42,7 +42,7 @@
                           >
                         </div>
                         <div class="column user-title">
-                          <h4>{{ username }}</h4>
+                          <h4><NuxtLink to="/profile">{{ username }}</NuxtLink></h4>
                           <h5><a href="/">Sign out</a></h5>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                     </div>
                     <b-menu class="is-custom-mobile">
                         <b-menu-list label="">
-                            <b-menu-item active expanded icon="bookmark" label="FAQ">
+                            <b-menu-item icon="bookmark" label="FAQ">
                                 <b-menu-item icon="check" label="What is Firebase"></b-menu-item>
                                 <b-menu-item icon="check" label="Find the right Database"></b-menu-item>
                                 <b-menu-item icon="check" label="Hidden Billing Coats"></b-menu-item>
@@ -141,6 +141,14 @@ html, body
       font-size: 1rem;
       font-weight: 500;
       color: white;
+      h4 {
+        a {
+          color: white;
+        }
+        a:hover {
+          color: red;
+        }
+      }
       h5 {
         a {
           color: white;
@@ -299,5 +307,7 @@ html, body
 }
 .signout {
   text-align: left;
+  background-color: #a3a3a3;
+  width: 106%;
 }
 </style>
