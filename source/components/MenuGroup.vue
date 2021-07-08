@@ -9,10 +9,17 @@
 
 <style lang="scss">
 .profile-main-content-layout {
-    padding-left: 10rem;
-    padding-right: 10rem;
-    text-align: center;
-    
+    margin: 0 auto;
+    width: 60rem;
+    div {
+        button {
+            span {
+                a:hover {
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
 .sub-title {

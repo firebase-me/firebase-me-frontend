@@ -2,7 +2,7 @@
   <section>
     <Header title="Articles" />
     <MenuGroup />
-    <div class="notice">
+    <div class="notice notification">
         <p>To apply to be an editor and submit your own articles,</p>
         <p>you must  do the  following:</p>
         <p class="px-1">1. Submit the content and rough outline of your article idea</p>
@@ -10,16 +10,22 @@
     </div>
     
     <div class="article-content">
-        <b-field label="Article Topic">
-            <b-input v-model="name"></b-input>
+        <b-field>
+            <b-input v-model="name" placeholder="Article Topic"></b-input>
         </b-field> 
 
-        <b-field label="Synopsis">
-            <b-input maxlength="1000" type="textarea"></b-input>
+        <b-field>
+            <b-input maxlength="1000" type="textarea"  placeholder="Synopsis"></b-input>
         </b-field>
     </div>
     
-    
+    <div class="status-submit-content">
+        <div class="columns no-margin">
+            <div class="column is-half px-0 pt-4">Status : <span class="status-span">None</span></div>
+            <div class="column is-half px-0 float-right"><b-button type="is-primary">Submit</b-button></div>
+        </div>
+        
+    </div>
     <!-- <Footer /> -->
   </section>
 </template>
@@ -33,7 +39,7 @@
     export default {
         data() {
             return {
-                email: '',
+                name: '',
             }
         },
         methods: {
@@ -64,14 +70,10 @@
 .notice {
     padding: 0.5rem;
     border: 2px solid black;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    width: 45rem;
     height: auto;
+    margin: 0 auto;
     margin-bottom: 2rem;
-}
-.px-1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 .article-content {
     text-align: center;
@@ -79,6 +81,30 @@
         .control {
             margin: 0 auto;
         }
+        div {
+            width: 45rem;
+        }
     }
+}
+.status-submit-content {
+    width: 45rem;
+    margin: 0 auto;
+}
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.float-right {
+    text-align: right;
+}
+.no-margin {
+    margin: 0;
+}
+.status-span {
+    font-weight: bold;
 }
 </style>
