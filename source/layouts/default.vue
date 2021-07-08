@@ -43,7 +43,7 @@
                         </div>
                         <div class="column user-title">
                           <h4><NuxtLink to="/profile">{{ username }}</NuxtLink></h4>
-                          <h5><a href="/">Sign out</a></h5>
+                          <h5><a @click="signout">Sign out</a></h5>
                         </div>
                     </div>
                     <div class="mobile-user">
@@ -95,8 +95,20 @@ export default {
       const result = await this.$firebase.auth().signInWithPopup(provider)
       var user = result.user
       this.username = user.displayName
+      localStorage.setItem("username", user.displayName)
       console.log(user)
+    },
+    // test : function() {
+    //   console.log("test", localStorage.getItem("username"))
+    // },
+    signout : function() {
+      localStorage.removeItem("username")
+      this.username = ""
     }
+  },
+  mounted: function() {
+    this.username = localStorage.getItem("username")
+    console.log('mounted:', this.username)
   },
   data() {
     return {
@@ -105,6 +117,7 @@ export default {
       mobile: "reduce",
       reduce: false,
       username : "",
+      // username : localStorage.getItem("username") ? localStorage.getItem("username") : "",
     };
   }
 };
