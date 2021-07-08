@@ -56,9 +56,7 @@
 <style lang="scss">
 .field {
   div {
-    input {
-      width : 20rem;
-    }
+    width : 20rem;
   }
 }
 .dashboard{

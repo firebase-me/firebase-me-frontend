@@ -1,12 +1,7 @@
 <template>
   <section>
     <Header title="Profile" />
-    <div class="columns is-desktop buttons profile-main-content-layout mt-50">
-        <div class="column"><b-button type="is-primary" outlined>Overview</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Messages</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Projects</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>My Articles</b-button></div>
-    </div>
+    <MenuGroup />
 
     <div class="columns profile-main-content-layout">
         <div class="column is-one-fifth sub-title">DisplayName : </div>
@@ -39,6 +34,7 @@
 <script>
     import Header from '~/components/Header';
     import Footer from '~/components/Footer';
+    import MenuGroup from '~/components/MenuGroup';
     export default {
         data() {
             return {
@@ -47,16 +43,3 @@
         }
     }
 </script>
-
-<style>
-.profile-main-content-layout {
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
-.sub-title {
-    padding-top: 1.1rem;
-}
-.mt-50 {
-   margin-top: 2rem; 
-}
-</style>

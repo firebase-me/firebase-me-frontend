@@ -2,12 +2,14 @@
     <div class="header">
         <span class="header-title">{{pagename}}</span>
         <span class="header-setting">
+            <NuxtLink to="/admin/main">
             <img
                 class="setting-image"
                 src="~assets/setting.png"
                 alt="setting-image"
                 height="5"
             >
+            </NuxtLink>
         </span>
     </div>
 </template>

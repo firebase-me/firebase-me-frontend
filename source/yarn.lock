@@ -1173,11 +1173,6 @@
     "protobufjs" "^6.10.0"
     "yargs" "^16.1.1"
 
-"@iconscout/vue-unicons-thinline@^0.0.1":
-  "integrity" "sha512-COKzOJICxCeL4py4YOai7y9emx35Af/B0gyELKTSNJ1C1FgGLDNlRxeMufV5n4I5883NRHLHVPG1UqTZc+SHiA=="
-  "resolved" "https://registry.npmjs.org/@iconscout/vue-unicons-thinline/-/vue-unicons-thinline-0.0.1.tgz"
-  "version" "0.0.1"
-
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
   "resolved" "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
