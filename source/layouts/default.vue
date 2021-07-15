@@ -133,7 +133,8 @@ html, body
   background-color: #666666;
   border: 2px solid black;
   // height: 46rem;
-  height: 100vh;
+  // height: 100vh;
+  height: 200vh;
   .user-logo{
     margin-left: 1rem;
   }

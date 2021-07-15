@@ -24,7 +24,6 @@
             <div class="column is-half px-0 pt-4">Status : <span class="status-span">None</span></div>
             <div class="column is-half px-0 float-right"><b-button v-on:click="create(topic, content)" type="is-primary">Submit</b-button></div>
         </div>
-        
     </div>
     <!-- <Footer /> -->
   </section>

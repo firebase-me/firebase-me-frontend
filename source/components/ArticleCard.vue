@@ -46,7 +46,7 @@ export default {
 .article-card {
     border: 3px black solid;
     background-color: white;
-    height: 5rem;
+    height: auto;
     margin-left: 10rem;
     margin-right: 10rem;
     padding: 0.5rem;
