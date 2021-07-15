@@ -20,24 +20,15 @@
             </b-button>
         </div>
     </div>
-    <ArticleCard 
-        articleName="Fast Learner" 
-        createdAt="2021.05.21"
-        topicName="How can I make a region for boundary conditions for a 3D geometry?"
+
+    <ArticleCard v-for="article in articles" :key="article.id"
+        :id="article.id" 
+        :articleName="article.content" 
+        :createdAt="article.createdAt"
+        :topicName="article.topic"
         status="Public"
     />
-    <ArticleCard 
-        articleName="Fast Learner" 
-        createdAt="2021.05.21"
-        topicName="How can I make a region for boundary conditions for a 3D geometry?"
-        status="Public"
-    />
-    <ArticleCard 
-        articleName="Fast Learner" 
-        createdAt="2021.05.21"
-        topicName="How can I make a region for boundary conditions for a 3D geometry?"
-        status="Public"
-    />
+
     <Pagination />
     <!-- <Footer /> -->
   </section>
@@ -49,10 +40,12 @@
     import MenuGroup from '~/components/MenuGroup';
     import Pagination from '~/components/Pagination';
     import ArticleCard from '~/components/ArticleCard';
+
     export default {
         data() {
             return {
                 email: '',
+                articles: []
             }
         },
         methods: {
@@ -60,6 +53,15 @@
                 // `this` will refer to the component instance
                 console.log('searchIconClick')
             }
+        },
+        mounted() {
+            console.log('Main Vue mounted')
+            new this.$firebase.firestore().collection("articles").onSnapshot(snapshot => {
+                this.articles = snapshot.docs.map(doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }))
+            })
         }
     }
 </script>

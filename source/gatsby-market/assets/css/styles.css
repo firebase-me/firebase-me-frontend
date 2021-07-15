@@ -1,0 +1,67 @@
+/* global.css */
+body {
+  --bg: #FFF;
+  --textNormal: #222;
+  --text: #17252A;;
+  --primary: #17252A;
+  --secondary-light: #FFF;
+  --secondary-main: #222;
+  --secondary-dark: #222;
+  --contrastText: #FFF;
+  --textTitle: #222;
+  --textLink: blue;
+  --hr: hsla(0, 0%, 0%, 0.2);
+
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: darkslategray;
+  --textNormal: white;
+  --text: white;
+  --primary: white;
+  --secondary-light: var(--primary);
+  --secondary-main: #FFABDC;
+  --secondary-dark: #FFABDC;
+  --contrastText: #000;
+  --textTitle: white;
+  --textLink: yellow;
+  --hr: hsla(0, 0%, 100%, 0.2);
+
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* the theme toggler */
+.theme-toggler
+{
+  text-align: right;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 5px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -5px;
+}
+
+.aslide {
+  min-height: 50px;
+}
+
+.custom-image-wrapper {
+  height: 300px !important;
+  margin: 10px;
+}
+
+.accordion-slider-section .slick-list {
+  height: 320px;
+}
+.accordion-main-section:last-child .MuiCollapse-wrapperInner {
+  border-bottom: 1px solid #dfdfdf;
+}

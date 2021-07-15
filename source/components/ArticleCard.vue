@@ -8,7 +8,7 @@
             <div class="column is-half">{{props_topicName}}</div>
             <div class="column">Status:{{props_status}}</div>
             <div class="column">
-                <div class="block article-delete">
+                <div class="block article-delete" v-on:click="deleteItem">
                     <b-icon
                         icon="delete"
                         size="is-large">
@@ -22,13 +22,22 @@
 <script>
 export default {
     name : "ArticleCardComponent",
-    props: ['articleName',  'createdAt', 'topicName', 'status'],
+    props: ['id', 'articleName',  'createdAt', 'topicName', 'status'],
     data() {
         return {
+            props_id : this.id,
             props_articleName : this.articleName,
             props_createdAt : this.createdAt,
             props_topicName : this.topicName,
             props_status : this.status,
+        }
+    },
+    methods : {
+        deleteItem() {
+            console.log(this.id)
+            new this.$firebase.firestore().collection("articles")
+            .doc(this.id)
+            .delete()
         }
     }
 }

@@ -1,9 +1,24 @@
 {
+  "ArticleCard": {
+    "description": "Auto imported from components/ArticleCard.vue"
+  },
   "Card": {
     "description": "Auto imported from components/Card.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "MenuGroup": {
+    "description": "Auto imported from components/MenuGroup.vue"
+  },
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Pagination": {
+    "description": "Auto imported from components/Pagination.vue"
   },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"

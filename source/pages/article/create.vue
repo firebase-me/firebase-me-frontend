@@ -11,18 +11,18 @@
     
     <div class="article-content">
         <b-field>
-            <b-input v-model="name" placeholder="Article Topic"></b-input>
+            <b-input v-model="topic" placeholder="Article Topic"></b-input>
         </b-field> 
 
         <b-field>
-            <b-input maxlength="1000" type="textarea"  placeholder="Synopsis"></b-input>
+            <b-input v-model="content" maxlength="1000" type="textarea"  placeholder="Synopsis"></b-input>
         </b-field>
     </div>
     
     <div class="status-submit-content">
         <div class="columns no-margin">
             <div class="column is-half px-0 pt-4">Status : <span class="status-span">None</span></div>
-            <div class="column is-half px-0 float-right"><b-button type="is-primary">Submit</b-button></div>
+            <div class="column is-half px-0 float-right"><b-button v-on:click="create(topic, content)" type="is-primary">Submit</b-button></div>
         </div>
         
     </div>
@@ -36,16 +36,50 @@
     import MenuGroup from '~/components/MenuGroup';
     import Pagination from '~/components/Pagination';
     import ArticleCard from '~/components/ArticleCard';
+    import firebase from '~/plugins/firebase.js'
+
     export default {
         data() {
             return {
                 name: '',
+                topic : null,
+                content : null,
             }
+        },
+        mounted() {
+            const date = new Date;
+            const yy = date.getFullYear()
+            const mm = date.getMonth()+1
+            const dd = date.getDate()
+            const createdAt = yy+'.'+mm+'.'+dd
+            // const hh = getHours()
+            console.log(createdAt)
         },
         methods: {
             searchIconClick() {
                 // `this` will refer to the component instance
                 console.log('searchIconClick')
+            }, 
+            create(t, c) {
+                const date = new Date;
+                const yy = date.getFullYear()
+                const mm = date.getMonth()+1
+                const dd = date.getDate()
+                const createdAt = yy+'.'+mm+'.'+dd
+
+                const document = {
+                    topic : t,
+                    content : c,
+                    createdAt
+                }
+                console.log('create', document)
+                new this.$firebase.firestore().collection("articles").add(document)
+                .then(ref => {
+                    console.log("Added document with ID: ", ref)
+                })
+                this.topic = ""
+                this.content = ""
+                
             }
         }
     }

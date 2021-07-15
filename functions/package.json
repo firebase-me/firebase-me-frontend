@@ -29,7 +29,9 @@
     "grapesjs": "^0.17.19",
     "js-cookie": "^2.2.1",
     "jwt-decode": "^3.1.2",
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "fibers": "^5.0.0",
+    "sass-loader": "^10.2.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.2.0",
