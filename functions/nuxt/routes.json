@@ -3,13 +3,29 @@
     "name": "editor",
     "path": "/editor",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\editor.vue",
-    "chunkName": "pages/editor"
+    "chunkName": "pages/editor",
+    "_name": "_36c58ca2"
+  },
+  {
+    "name": "faq",
+    "path": "/faq",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\faq\\\\index.vue",
+    "chunkName": "pages/faq/index",
+    "_name": "_b0fedd84"
+  },
+  {
+    "name": "grapes",
+    "path": "/grapes",
+    "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\grapes.vue",
+    "chunkName": "pages/grapes",
+    "_name": "_756d096c"
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire"
+    "chunkName": "pages/inspire",
+    "_name": "_7e23c988"
   },
   {
     "name": "profile",
@@ -21,62 +37,73 @@
         "name": "profile-main",
         "path": "main",
         "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\main.vue",
-        "chunkName": "pages/profile/main"
+        "chunkName": "pages/profile/main",
+        "_name": "_735bfb60"
       },
       {
         "name": "profile-messages",
         "path": "messages",
         "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\messages.vue",
-        "chunkName": "pages/profile/messages"
+        "chunkName": "pages/profile/messages",
+        "_name": "_a0c6b63a"
       },
       {
         "name": "profile-projects",
         "path": "projects",
         "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\profile\\\\projects.vue",
-        "chunkName": "pages/profile/projects"
+        "chunkName": "pages/profile/projects",
+        "_name": "_34457511"
       }
-    ]
+    ],
+    "_name": "_11203e52"
   },
   {
     "name": "services",
     "path": "/services",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\services.vue",
-    "chunkName": "pages/services"
+    "chunkName": "pages/services",
+    "_name": "_728a34c0"
   },
   {
     "name": "admin-articles",
     "path": "/admin/articles",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\articles.vue",
-    "chunkName": "pages/admin/articles"
+    "chunkName": "pages/admin/articles",
+    "_name": "_904cbc0c"
   },
   {
     "name": "admin-main",
     "path": "/admin/main",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\main.vue",
-    "chunkName": "pages/admin/main"
+    "chunkName": "pages/admin/main",
+    "_name": "_378351f6"
   },
   {
     "name": "admin-navigation",
     "path": "/admin/navigation",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\admin\\\\navigation.vue",
-    "chunkName": "pages/admin/navigation"
+    "chunkName": "pages/admin/navigation",
+    "_name": "_82a27dde"
   },
   {
     "name": "article-create",
     "path": "/article/create",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\article\\\\create.vue",
-    "chunkName": "pages/article/create"
+    "chunkName": "pages/article/create",
+    "_name": "_02c74fc0"
   },
   {
     "name": "article-main",
     "path": "/article/main",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\article\\\\main.vue",
-    "chunkName": "pages/article/main"
+    "chunkName": "pages/article/main",
+    "_name": "_47a36d46"
   },
   {
     "name": "index",
     "path": "/",
     "component": "F:\\\\AU\\\\firebase-me-frontend\\\\source\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_0bb81100"
   }
 ]

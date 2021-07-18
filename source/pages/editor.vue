@@ -34,7 +34,6 @@ import 'grapesjs/dist/css/grapes.min.css';
     export default {
         data() {
             return {
-                msg: "This is my grapesjs page",
                 videoUrl: 'https://dms.licdn.com/playlist/C5605AQHKk53zn6dukw/mp4-720p-30fp-crf28/0/1626332720016?e=1626465600&v=beta&t=zmjjneCUyW3F5cWhzVa0jI1HH6VCrvSE6GpFlYVv4Gw'
             }
         },
@@ -49,7 +48,7 @@ import 'grapesjs/dist/css/grapes.min.css';
     border: 3px solid black;
     margin-left: 4rem;
     margin-right: 4rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     height: auto;
 }
 .text-center {

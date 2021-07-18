@@ -5,6 +5,8 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _36c58ca2 = () => interopDefault(import('..\\pages\\editor.vue' /* webpackChunkName: "pages/editor" */))
+const _b0fedd84 = () => interopDefault(import('..\\pages\\faq\\index.vue' /* webpackChunkName: "pages/faq/index" */))
+const _756d096c = () => interopDefault(import('..\\pages\\grapes.vue' /* webpackChunkName: "pages/grapes" */))
 const _7e23c988 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _11203e52 = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
 const _735bfb60 = () => interopDefault(import('..\\pages\\profile\\main.vue' /* webpackChunkName: "pages/profile/main" */))
@@ -33,6 +35,14 @@ export const routerOptions = {
     path: "/editor",
     component: _36c58ca2,
     name: "editor"
+  }, {
+    path: "/faq",
+    component: _b0fedd84,
+    name: "faq"
+  }, {
+    path: "/grapes",
+    component: _756d096c,
+    name: "grapes"
   }, {
     path: "/inspire",
     component: _7e23c988,
