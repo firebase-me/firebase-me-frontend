@@ -1,12 +1,7 @@
 <template>
   <section>
     <Header title="Admin Panel" />
-    <div class="columns is-desktop buttons profile-main-content-layout mt-50">
-        <div class="column"><b-button type="is-primary" outlined>Overview</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Articles</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Editors</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Users</b-button></div>
-    </div>
+    <AdminMenuGroup />
     <Footer />
   </section>
 </template>
@@ -14,6 +9,8 @@
 <script>
     import Header from '~/components/Header';
     import Footer from '~/components/Footer';
+    import AdminMenuGroup from '~/components/AdminMenuGroup';
+
     export default {
         data() {
             return {

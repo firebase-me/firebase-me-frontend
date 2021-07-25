@@ -50,7 +50,7 @@ export default {
     color: white;
 }
 .setting-image {
-    max-width: 2.8rem;
+    max-width: 2rem;
     cursor: pointer;
 }
 </style>

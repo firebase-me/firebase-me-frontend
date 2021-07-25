@@ -95,14 +95,36 @@ export default {
       const result = await this.$firebase.auth().signInWithPopup(provider)
       var user = result.user
       this.username = user.displayName
+      this.userID = user.uid
       localStorage.setItem("username", user.displayName)
-      console.log(user)
+      localStorage.setItem("userID", user.uid)
+      console.log("users:", this.userID)
+
+      new this.$firebase.firestore()
+      .collection("users")
+      .doc(this.userID)
+      .get()
+      .then((docRef) => { 
+          if(!docRef.data()) {
+            const document = {
+              idEditor : null,
+              credit : 0,
+              liked: null,
+              projects: [],
+              denied : null,
+              articles: null
+            }
+
+            new this.$firebase.firestore()
+            .collection("users")
+            .doc(this.userID)
+            .set(document)
+          }
+      })
     },
-    // test : function() {
-    //   console.log("test", localStorage.getItem("username"))
-    // },
     signout : function() {
       localStorage.removeItem("username")
+      localStorage.removeItem("userID")
       this.username = ""
     }
   },

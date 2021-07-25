@@ -15,17 +15,17 @@
 
     <div class="columns profile-main-content-layout">
         <div class="column is-one-fifth">Internal UID : </div>
-        <div class="column">Internal UID : </div>
+        <div class="column">{{userID}}</div>
     </div>
 
      <div class="columns profile-main-content-layout">
         <div class="column is-one-fifth">Editor UID : </div>
-        <div class="column">Internal UID : </div>
+        <div class="column">Internal UID</div>
     </div>
 
      <div class="columns profile-main-content-layout">
-        <div class="column is-one-fifth">Linked Project : </div>
-        <div class="column">Internal UID : </div>
+        <div class="column is-one-fifth">Linked Project: </div>
+        <div class="column">Internal UID</div>
     </div>
     <Footer />
   </section>
@@ -38,8 +38,11 @@
     export default {
         data() {
             return {
-                email: '',
+                userID : ""
             }
+        },
+        mounted() {
+            this.userID = localStorage.getItem('userID')
         }
     }
 </script>

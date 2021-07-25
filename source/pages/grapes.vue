@@ -14,7 +14,7 @@
 <script>
 
 import 'grapesjs/dist/css/grapes.min.css';
-import grapesjs from 'grapesjs';
+// import grapesjs from 'grapesjs';
 
     export default {
         data() {
@@ -125,5 +125,8 @@ import grapesjs from 'grapesjs';
 }
 .panel__basic-actions {
   position: initial;
+}
+.gjs-devices-c {
+    padding-bottom: 0;
 }
 </style>
