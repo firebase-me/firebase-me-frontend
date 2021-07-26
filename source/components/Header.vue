@@ -2,7 +2,7 @@
     <div class="header">
         <span class="header-title">{{pagename}}</span>
         <span class="header-setting">
-            <NuxtLink to="/admin/main">
+            <NuxtLink to="/admin/overview">
             <img
                 class="setting-image"
                 src="~assets/setting.png"

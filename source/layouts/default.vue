@@ -15,9 +15,11 @@
                         <div class="column is-3 title-logo">
                           <NuxtLink to="/">
                           <img
-                              src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png"
-                              alt="Lightweight UI components for Vue.js based on Bulma"
-                          />
+                              class="firebase-image"
+                              src="~assets/firebase.png"
+                              alt="firebase-image"
+                              height="5"
+                          >
                           </NuxtLink>
                         </div>
                         <div class="column title">
@@ -26,9 +28,11 @@
                     </div>
                     <div class="mobile-logo">
                       <img
-                          src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png"
-                          alt="Lightweight UI components for Vue.js based on Bulma"
-                      />
+                          class="firebase-image"
+                          src="~assets/firebase.png"
+                          alt="firebase-image"
+                          height="5"
+                      >
                     </div>
                     <div v-if="!username" class="container mb-1rem signin">
                       <b-button @click="signInPopup" type="is-primary">Sign In</b-button>
@@ -79,7 +83,7 @@
                     </b-menu>
                 </div>
             </b-sidebar>
-            <div class="container column is-10">
+            <div class="container column is-10 w-full">
               <Nuxt />
             </div>
         </section>
@@ -139,7 +143,6 @@ export default {
       mobile: "reduce",
       reduce: false,
       username : "",
-      // username : localStorage.getItem("username") ? localStorage.getItem("username") : "",
     };
   }
 };
@@ -150,18 +153,22 @@ html, body
 {
     height: 100%;
 }
+.switch-channel {
+  bottom: 1rem;
+  position: fixed;
+  left: 1rem;
+}
 .p-1 {
   padding: 1em;
   background-color: #666666;
   border: 2px solid black;
-  // height: 46rem;
-  // height: 100vh;
   height: 200vh;
   .user-logo{
     margin-left: 1rem;
   }
   .mobile-logo, .mobile-user{
     display: none;
+    text-align: center;
   }
   .block {
     .title{
@@ -225,7 +232,7 @@ html, body
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
     .b-sidebar {
         .sidebar-content {
             &.is-mini-mobile {
@@ -276,7 +283,7 @@ html, body
         }
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
     .b-sidebar {
         .sidebar-content {
             &.is-mini {

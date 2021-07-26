@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Active</h1>
+        <h1>Banned</h1>
     </section>
 </template>
 

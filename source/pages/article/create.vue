@@ -29,7 +29,7 @@
     <div class="status-submit-content">
         <div class="columns no-margin">
             <div class="column is-half px-0 pt-4">Status : <span class="status-span">{{status}}</span></div>
-            <div class="column is-half px-0 float-right"><b-button v-on:click="create(topic, content)" type="is-primary">Submit</b-button></div>
+            <div class="column is-half px-0 float-right" v-if="status != 'Denied'"><b-button v-on:click="create(topic, content)" type="is-primary">Submit</b-button></div>
         </div>
     </div>
     <!-- <Footer /> -->
@@ -117,7 +117,12 @@
                     this.topic = ""
                     this.content = ""
 
-                    this.status = "pending"
+                    this.status = "Pending"
+
+                    this.$buefy.toast.open({
+                        message: 'Submitted successfully. Please wait until admin approve.',
+                        type: 'is-success'
+                    })
                 }
             }
         }

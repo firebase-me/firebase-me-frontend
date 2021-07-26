@@ -1,24 +1,48 @@
 <template>
     <div class="columns is-desktop buttons profile-main-content-layout mt-50">
-        <div class="column"><b-button type="is-primary" outlined>Overview</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Messages</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined>Projects</b-button></div>
-        <div class="column"><b-button type="is-primary" outlined><NuxtLink :to="articleUrl">My Articles</NuxtLink></b-button></div>
+        <div class="column" v-for="(groupbutton, index) in groupbuttons" :key="index">
+            <b-button 
+                type="is-primary"
+                @click="handleMenu(groupbutton.to, index)" 
+                :outlined="pos !== index"
+            >
+                {{groupbutton.title}}
+            </b-button>
+        </div>
     </div>
 </template>
 
 <script>
-    import Header from '~/components/Header';
-    import Footer from '~/components/Footer';
-    import MenuGroup from '~/components/MenuGroup';
-    import Pagination from '~/components/Pagination';
-    import ArticleCard from '~/components/ArticleCard';
+    import { mapMutations } from 'vuex'
     import firebase from '~/plugins/firebase.js'
 
     export default {
         data() {
             return {
-                articleUrl : "/article/create"
+                articleUrl : "/article/create",
+                groupbuttons : [
+                    {
+                        title : "Profile",
+                        to : "/profile"
+                    },
+                    {
+                        title : "Messages",
+                        to : "/messages"
+                    },
+                    {
+                        title : "Projects",
+                        to : "/projects"
+                    },
+                    {
+                        title : "My Article",
+                        to : this.articleUrl
+                    },
+                ]
+            }
+        },
+        computed: {
+            pos () {
+                return this.$store.state.groupButtons.groupButtonPos
             }
         },
         mounted() {
@@ -31,14 +55,19 @@
             .then((docRef) => { 
                 this.idEditor = docRef.data().isEditor,
                 this.denied = docRef.data().denied
-                console.log("idEditor=>", this.idEditor)
 
                 if(this.idEditor === "true") 
                     this.articleUrl = "/article/editor"
-
-                console.log("this.articleUrl", this.articleUrl)
             })
         },
+        methods: {
+            handleMenu(to, pos) {
+                console.log(to)
+                if(pos === 3) this.$router.push({path: this.articleUrl})
+                else this.$router.push({path: to})
+                this.$store.commit('groupButtons/setGroupButtonPos', pos)
+            }
+        }
     }
 </script>
 

@@ -37,7 +37,7 @@ export default {
     mounted() {
         
     },
-   methods: {
+    methods: {
         showItem() {
             this.$buefy.dialog.prompt({
                 title: this.topic,
@@ -129,12 +129,14 @@ export default {
 }
 </script>
 <style lang="scss">
+.tab-content {
+    padding: 0 !important;
+    padding-top: 2rem !important;
+}
 .article-card {
     border: 3px black solid;
     background-color: white;
     height: auto;
-    margin-left: 10rem;
-    margin-right: 10rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;

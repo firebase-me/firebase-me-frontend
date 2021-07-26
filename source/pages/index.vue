@@ -10,11 +10,12 @@
         </b-field>
 
         <div class="dashboard">
-          <img
-                src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png"
-                alt="Lightweight UI components for Vue.js based on Bulma"
+            <img
                 class="dashboard-logo"
-            />
+                src="~assets/firebase.png"
+                alt="firebase-image"
+                height="5"
+            >
           <h1 class="firebase-title">Firebase.me</h1>
           <p class="mt-50">
             An online resource for Google Firebase, with community written<br> Guides and Documentation enhancements.

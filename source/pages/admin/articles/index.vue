@@ -1,12 +1,7 @@
 <template>
     <section>
         <Header title="Admin Panel" />
-        <div class="columns is-desktop buttons profile-main-content-layout mt-50">
-            <div class="column"><b-button type="is-primary" outlined><NuxtLink to="articles">Overview</NuxtLink></b-button></div>
-            <div class="column"><b-button type="is-primary" outlined><NuxtLink to="articles">Articles</NuxtLink></b-button></div>
-            <div class="column"><b-button type="is-primary" outlined><NuxtLink to="users/active">Users</NuxtLink></b-button></div>
-            <div class="column"><b-button type="is-primary" outlined><NuxtLink to="articles">Globals</NuxtLink></b-button></div>
-        </div>
+        <AdminMenuGroup />
         <b-tabs type="is-toggle" expanded class="tabs-width">
             <b-tab-item label="Live">
                 <b-table :data="dataLive">
@@ -82,6 +77,8 @@
 </style>
 
 <script>
+    import AdminMenuGroup from '~/components/AdminMenuGroup';
+
     export default {
         data() {
             return {
