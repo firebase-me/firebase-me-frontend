@@ -2,6 +2,7 @@
     <div class="sidebar-page">
         <section class="sidebar-layout">
              <b-sidebar
+                v-if="$nuxt.$route.path != '/articles/editor'"
                 position="static"
                 :mobile="mobile"
                 :expand-on-hover="expandOnHover"
@@ -59,12 +60,12 @@
                     </div>
                     <b-menu class="is-custom-mobile">
                         <b-menu-list label="">
-                            <b-menu-item icon="bookmark" label="FAQ">
+                            <b-menu-item icon="bookmark" label="FAQ" @click="handleClick('/faq')">
                                 <b-menu-item icon="check" label="What is Firebase"></b-menu-item>
                                 <b-menu-item icon="check" label="Find the right Database"></b-menu-item>
                                 <b-menu-item icon="check" label="Hidden Billing Coats"></b-menu-item>
                             </b-menu-item>
-                            <b-menu-item icon="book" label="Documentation">
+                            <b-menu-item icon="book" label="Documentation" @click="handleClick('/articles/editor')">
                                 <b-menu-item icon="check" label="Rest API"></b-menu-item>
                                 <b-menu-item icon="check" label="Realtime Transactions"></b-menu-item>
                             </b-menu-item>
@@ -83,7 +84,12 @@
                     </b-menu>
                 </div>
             </b-sidebar>
-            <div class="container column is-10 w-full">
+
+            <div v-if="$nuxt.$route.path != '/articles/editor'" class="container column is-10 w-full">
+              <Nuxt />
+            </div>
+
+            <div v-if="$nuxt.$route.path === '/articles/editor'" class="container column is-12 w-full">
               <Nuxt />
             </div>
         </section>
@@ -93,6 +99,15 @@
 <script>
 
 export default {
+  data() {
+      return {
+        expandOnHover: false,
+        expandWithDelay: false,
+        mobile: "reduce",
+        reduce: false,
+        username : ""
+      }
+  },
   methods: {
     signInPopup: async function() { 
       var provider = new this.$firebase.auth.GoogleAuthProvider()
@@ -130,20 +145,14 @@ export default {
       localStorage.removeItem("username")
       localStorage.removeItem("userID")
       this.username = ""
+    },
+    handleClick(to) {
+      this.$router.push({path: to})
     }
   },
   mounted: function() {
-    this.username = localStorage.getItem("username")
-    console.log('mounted:', this.username)
-  },
-  data() {
-    return {
-      expandOnHover: false,
-      expandWithDelay: false,
-      mobile: "reduce",
-      reduce: false,
-      username : "",
-    };
+    this.username = localStorage.getItem('username')
+    console.log('path:', $nuxt.$route.path === "/articles/editor")
   }
 };
 </script>
@@ -152,6 +161,18 @@ export default {
 html, body
 {
     height: 100%;
+}
+@media screen and (min-width: 1216px){
+  .container:not(.is-max-desktop) {
+      max-width: 100%;
+  }
+}
+.gjs-cv-canvas {
+    width: 100% !important;
+}
+.gjs-block-section {
+    width: 100% !important;
+    min-height: 2rem !important;
 }
 .switch-channel {
   bottom: 1rem;

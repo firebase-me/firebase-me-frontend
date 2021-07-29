@@ -19,7 +19,7 @@
     export default {
         data() {
             return {
-                articleUrl : "/article/create",
+                articleUrl : "/articles/create",
                 groupbuttons : [
                     {
                         title : "Profile",
@@ -57,12 +57,26 @@
                 this.denied = docRef.data().denied
 
                 if(this.idEditor === "true") 
-                    this.articleUrl = "/article/editor"
+                    this.articleUrl = "/articles/dashboard"
             })
         },
         methods: {
             handleMenu(to, pos) {
-                console.log(to)
+
+                const userID = localStorage.getItem('userID')
+            
+                new this.$firebase.firestore()
+                .collection("users")
+                .doc(userID)
+                .get()
+                .then((docRef) => { 
+                    this.idEditor = docRef.data().isEditor,
+                    this.denied = docRef.data().denied
+
+                    if(this.idEditor === "true") 
+                        this.articleUrl = "/articles/dashboard"
+                })
+
                 if(pos === 3) this.$router.push({path: this.articleUrl})
                 else this.$router.push({path: to})
                 this.$store.commit('groupButtons/setGroupButtonPos', pos)

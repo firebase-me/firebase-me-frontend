@@ -1,12 +1,12 @@
 <template>
-    <section class="article-card">
+    <section class="article-card" @click="view">
         <div class="columns">
             <div class="column is-one-fourth">
-                <h1 class="article-name">{{props_articleName}}</h1>
-                <h1>{{props_createdAt}}</h1>
+                <h1 class="article-name">{{props_article.title}}</h1>
+                <h1>{{props_article.createdAt}}</h1>
             </div>
-            <div class="column is-half">{{props_topicName}}</div>
-            <div class="column">Status:{{props_status}}</div>
+            <div class="column is-half">{{props_article.topic}}</div>
+            <div class="column">Status:{{props_article.status}}</div>
             <div class="column">
                 <div class="block article-delete" v-on:click="deleteItem">
                     <b-icon
@@ -22,22 +22,23 @@
 <script>
 export default {
     name : "ArticleCardComponent",
-    props: ['id', 'articleName',  'createdAt', 'topicName', 'status'],
+    props: ['article'],
     data() {
         return {
-            props_id : this.id,
-            props_articleName : this.articleName,
-            props_createdAt : this.createdAt,
-            props_topicName : this.topicName,
-            props_status : this.status,
+            props_article : this.article
         }
     },
     methods : {
         deleteItem() {
-            console.log(this.id)
+            console.log(this.article.id)
             new this.$firebase.firestore().collection("articles")
-            .doc(this.id)
+            .doc(this.article.id)
             .delete()
+        },
+        view() {
+            const path = "view/"+this.article.id
+            console.log('view', path)
+            this.$router.push({path: path})
         }
     }
 }
@@ -52,6 +53,7 @@ export default {
     padding: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;
+    cursor: pointer;
 }
 .article-name {
     font-weight: bold;

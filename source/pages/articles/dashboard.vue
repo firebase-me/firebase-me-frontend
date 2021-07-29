@@ -16,17 +16,13 @@
         </div>
         <div class="column button-white">
             <b-button type="is-primary">
-                <NuxtLink to="/article/create">Create</NuxtLink>
+                <NuxtLink to="editor">Create</NuxtLink>
             </b-button>
         </div>
     </div>
 
     <ArticleCard v-for="article in articles" :key="article.id"
-        :id="article.id" 
-        :articleName="article.content" 
-        :createdAt="article.createdAt"
-        :topicName="article.topic"
-        status="Public"
+        :article="article"
     />
 
     <Pagination />

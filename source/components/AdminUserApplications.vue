@@ -11,10 +11,6 @@
     </section>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
-
 <script>
     import ApplicationCard from '~/components/ApplicationCard';
 
