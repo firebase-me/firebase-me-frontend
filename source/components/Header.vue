@@ -31,7 +31,7 @@ export default {
 .header{
     height: 5rem;
     width: 100%;
-    background-color: #303030;
+    background-color: #212121;
     top: 0;
     position: relative;
     padding-top: 1rem;

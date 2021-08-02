@@ -15,6 +15,7 @@
     "fibers": "^5.0.0",
     "firebase": "^8.7.0",
     "grapesjs": "^0.17.19",
+    "grapesjs-plugin-ckeditor": "0.0.10",
     "js-cookie": "^2.2.1",
     "jwt-decode": "^3.1.2",
     "nuxt": "^2.15.7",
@@ -24,6 +25,7 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.1",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.2"
   }

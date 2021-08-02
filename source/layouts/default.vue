@@ -181,9 +181,9 @@ html, body
 }
 .p-1 {
   padding: 1em;
-  background-color: #666666;
-  border: 2px solid black;
-  height: 200vh;
+  background-color: #2f3136;
+  min-height: 100vh;
+  height: 100%;
   .user-logo{
     margin-left: 1rem;
   }
@@ -210,7 +210,7 @@ html, body
           color: white;
         }
         a:hover {
-          color: red;
+          color: #fa4f16;
         }
       }
       h5 {
@@ -227,7 +227,7 @@ html, body
               font-size: 12px;
           }
           a:hover {
-              background-color: rgb(211, 68, 68);
+              background-color: #fa4f16;
           }
       }
   }
@@ -371,7 +371,7 @@ html, body
 }
 .signout {
   text-align: left;
-  background-color: #a3a3a3;
+  background-color: #ffffff1f;
   width: 106%;
 }
 </style>

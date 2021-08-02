@@ -1,9 +1,24 @@
 {
+  "AdminMenuGroup": {
+    "description": "Auto imported from components/AdminMenuGroup.vue"
+  },
+  "AdminUserActive": {
+    "description": "Auto imported from components/AdminUserActive.vue"
+  },
+  "AdminUserApplications": {
+    "description": "Auto imported from components/AdminUserApplications.vue"
+  },
+  "AdminUserBanned": {
+    "description": "Auto imported from components/AdminUserBanned.vue"
+  },
+  "AdminUsersGroup": {
+    "description": "Auto imported from components/AdminUsersGroup.vue"
+  },
+  "ApplicationCard": {
+    "description": "Auto imported from components/ApplicationCard.vue"
+  },
   "ArticleCard": {
     "description": "Auto imported from components/ArticleCard.vue"
-  },
-  "Card": {
-    "description": "Auto imported from components/Card.vue"
   },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
@@ -19,8 +34,5 @@
   },
   "Pagination": {
     "description": "Auto imported from components/Pagination.vue"
-  },
-  "Tutorial": {
-    "description": "Auto imported from components/Tutorial.vue"
   }
 }

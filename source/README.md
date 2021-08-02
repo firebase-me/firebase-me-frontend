@@ -17,6 +17,8 @@ $ npm run start
 $ npm run generate
 ```
 
+https://nuxtjs.org/docs/2.x/deployment/deployment-cloud-run
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories

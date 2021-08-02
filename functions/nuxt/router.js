@@ -4,21 +4,24 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _36c58ca2 = () => interopDefault(import('..\\pages\\editor.vue' /* webpackChunkName: "pages/editor" */))
-const _b0fedd84 = () => interopDefault(import('..\\pages\\faq\\index.vue' /* webpackChunkName: "pages/faq/index" */))
-const _756d096c = () => interopDefault(import('..\\pages\\grapes.vue' /* webpackChunkName: "pages/grapes" */))
-const _7e23c988 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _11203e52 = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
-const _735bfb60 = () => interopDefault(import('..\\pages\\profile\\main.vue' /* webpackChunkName: "pages/profile/main" */))
-const _a0c6b63a = () => interopDefault(import('..\\pages\\profile\\messages.vue' /* webpackChunkName: "pages/profile/messages" */))
-const _34457511 = () => interopDefault(import('..\\pages\\profile\\projects.vue' /* webpackChunkName: "pages/profile/projects" */))
-const _728a34c0 = () => interopDefault(import('..\\pages\\services.vue' /* webpackChunkName: "pages/services" */))
-const _904cbc0c = () => interopDefault(import('..\\pages\\admin\\articles.vue' /* webpackChunkName: "pages/admin/articles" */))
-const _378351f6 = () => interopDefault(import('..\\pages\\admin\\main.vue' /* webpackChunkName: "pages/admin/main" */))
-const _82a27dde = () => interopDefault(import('..\\pages\\admin\\navigation.vue' /* webpackChunkName: "pages/admin/navigation" */))
-const _02c74fc0 = () => interopDefault(import('..\\pages\\article\\create.vue' /* webpackChunkName: "pages/article/create" */))
-const _47a36d46 = () => interopDefault(import('..\\pages\\article\\main.vue' /* webpackChunkName: "pages/article/main" */))
-const _0bb81100 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _291b4490 = () => interopDefault(import('..\\pages\\faq\\index.vue' /* webpackChunkName: "pages/faq/index" */))
+const _71b894c4 = () => interopDefault(import('..\\pages\\grapes.vue' /* webpackChunkName: "pages/grapes" */))
+const _9ca95af0 = () => interopDefault(import('..\\pages\\messages.vue' /* webpackChunkName: "pages/messages" */))
+const _4e3812c6 = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
+const _365422b6 = () => interopDefault(import('..\\pages\\projects.vue' /* webpackChunkName: "pages/projects" */))
+const _79884ac2 = () => interopDefault(import('..\\pages\\admin\\articles\\index.vue' /* webpackChunkName: "pages/admin/articles/index" */))
+const _11cdeee5 = () => interopDefault(import('..\\pages\\admin\\globals\\index.vue' /* webpackChunkName: "pages/admin/globals/index" */))
+const _71cb14bc = () => interopDefault(import('..\\pages\\admin\\main.vue' /* webpackChunkName: "pages/admin/main" */))
+const _23c41206 = () => interopDefault(import('..\\pages\\admin\\overview\\index.vue' /* webpackChunkName: "pages/admin/overview/index" */))
+const _a8daac66 = () => interopDefault(import('..\\pages\\admin\\users\\index.vue' /* webpackChunkName: "pages/admin/users/index" */))
+const _a2a47f16 = () => interopDefault(import('..\\pages\\articles\\create.vue' /* webpackChunkName: "pages/articles/create" */))
+const _202c1eaa = () => interopDefault(import('..\\pages\\articles\\dashboard.vue' /* webpackChunkName: "pages/articles/dashboard" */))
+const _004ca066 = () => interopDefault(import('..\\pages\\articles\\editor.vue' /* webpackChunkName: "pages/articles/editor" */))
+const _16aea39b = () => interopDefault(import('..\\pages\\admin\\users\\active.vue' /* webpackChunkName: "pages/admin/users/active" */))
+const _385f0178 = () => interopDefault(import('..\\pages\\admin\\users\\applications.vue' /* webpackChunkName: "pages/admin/users/applications" */))
+const _44ce15aa = () => interopDefault(import('..\\pages\\admin\\articles\\_id.vue' /* webpackChunkName: "pages/admin/articles/_id" */))
+const _7600684c = () => interopDefault(import('..\\pages\\articles\\view\\_id.vue' /* webpackChunkName: "pages/articles/view/_id" */))
+const _7ca2e046 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -32,65 +35,76 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/editor",
-    component: _36c58ca2,
-    name: "editor"
-  }, {
     path: "/faq",
-    component: _b0fedd84,
+    component: _291b4490,
     name: "faq"
   }, {
     path: "/grapes",
-    component: _756d096c,
+    component: _71b894c4,
     name: "grapes"
   }, {
-    path: "/inspire",
-    component: _7e23c988,
-    name: "inspire"
+    path: "/messages",
+    component: _9ca95af0,
+    name: "messages"
   }, {
     path: "/profile",
-    component: _11203e52,
-    name: "profile",
-    children: [{
-      path: "main",
-      component: _735bfb60,
-      name: "profile-main"
-    }, {
-      path: "messages",
-      component: _a0c6b63a,
-      name: "profile-messages"
-    }, {
-      path: "projects",
-      component: _34457511,
-      name: "profile-projects"
-    }]
+    component: _4e3812c6,
+    name: "profile"
   }, {
-    path: "/services",
-    component: _728a34c0,
-    name: "services"
+    path: "/projects",
+    component: _365422b6,
+    name: "projects"
   }, {
     path: "/admin/articles",
-    component: _904cbc0c,
+    component: _79884ac2,
     name: "admin-articles"
   }, {
+    path: "/admin/globals",
+    component: _11cdeee5,
+    name: "admin-globals"
+  }, {
     path: "/admin/main",
-    component: _378351f6,
+    component: _71cb14bc,
     name: "admin-main"
   }, {
-    path: "/admin/navigation",
-    component: _82a27dde,
-    name: "admin-navigation"
+    path: "/admin/overview",
+    component: _23c41206,
+    name: "admin-overview"
   }, {
-    path: "/article/create",
-    component: _02c74fc0,
-    name: "article-create"
+    path: "/admin/users",
+    component: _a8daac66,
+    name: "admin-users"
   }, {
-    path: "/article/main",
-    component: _47a36d46,
-    name: "article-main"
+    path: "/articles/create",
+    component: _a2a47f16,
+    name: "articles-create"
+  }, {
+    path: "/articles/dashboard",
+    component: _202c1eaa,
+    name: "articles-dashboard"
+  }, {
+    path: "/articles/editor",
+    component: _004ca066,
+    name: "articles-editor"
+  }, {
+    path: "/admin/users/active",
+    component: _16aea39b,
+    name: "admin-users-active"
+  }, {
+    path: "/admin/users/applications",
+    component: _385f0178,
+    name: "admin-users-applications"
+  }, {
+    path: "/admin/articles/:id",
+    component: _44ce15aa,
+    name: "admin-articles-id"
+  }, {
+    path: "/articles/view/:id?",
+    component: _7600684c,
+    name: "articles-view-id"
   }, {
     path: "/",
-    component: _0bb81100,
+    component: _7ca2e046,
     name: "index"
   }],
 
