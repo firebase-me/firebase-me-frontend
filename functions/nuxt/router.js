@@ -4,11 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _5453ab5c = () => interopDefault(import('..\\pages\\contactUs.vue' /* webpackChunkName: "pages/contactUs" */))
 const _291b4490 = () => interopDefault(import('..\\pages\\faq\\index.vue' /* webpackChunkName: "pages/faq/index" */))
 const _71b894c4 = () => interopDefault(import('..\\pages\\grapes.vue' /* webpackChunkName: "pages/grapes" */))
 const _9ca95af0 = () => interopDefault(import('..\\pages\\messages.vue' /* webpackChunkName: "pages/messages" */))
 const _4e3812c6 = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
 const _365422b6 = () => interopDefault(import('..\\pages\\projects.vue' /* webpackChunkName: "pages/projects" */))
+const _06721686 = () => interopDefault(import('..\\pages\\users\\index.vue' /* webpackChunkName: "pages/users/index" */))
 const _79884ac2 = () => interopDefault(import('..\\pages\\admin\\articles\\index.vue' /* webpackChunkName: "pages/admin/articles/index" */))
 const _11cdeee5 = () => interopDefault(import('..\\pages\\admin\\globals\\index.vue' /* webpackChunkName: "pages/admin/globals/index" */))
 const _71cb14bc = () => interopDefault(import('..\\pages\\admin\\main.vue' /* webpackChunkName: "pages/admin/main" */))
@@ -21,6 +23,7 @@ const _16aea39b = () => interopDefault(import('..\\pages\\admin\\users\\active.v
 const _385f0178 = () => interopDefault(import('..\\pages\\admin\\users\\applications.vue' /* webpackChunkName: "pages/admin/users/applications" */))
 const _44ce15aa = () => interopDefault(import('..\\pages\\admin\\articles\\_id.vue' /* webpackChunkName: "pages/admin/articles/_id" */))
 const _7600684c = () => interopDefault(import('..\\pages\\articles\\view\\_id.vue' /* webpackChunkName: "pages/articles/view/_id" */))
+const _077a25c9 = () => interopDefault(import('..\\pages\\users\\_userId\\index.vue' /* webpackChunkName: "pages/users/_userId/index" */))
 const _7ca2e046 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -35,6 +38,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/contactUs",
+    component: _5453ab5c,
+    name: "contactUs"
+  }, {
     path: "/faq",
     component: _291b4490,
     name: "faq"
@@ -54,6 +61,10 @@ export const routerOptions = {
     path: "/projects",
     component: _365422b6,
     name: "projects"
+  }, {
+    path: "/users",
+    component: _06721686,
+    name: "users"
   }, {
     path: "/admin/articles",
     component: _79884ac2,
@@ -102,6 +113,10 @@ export const routerOptions = {
     path: "/articles/view/:id?",
     component: _7600684c,
     name: "articles-view-id"
+  }, {
+    path: "/users/:userId",
+    component: _077a25c9,
+    name: "users-userId"
   }, {
     path: "/",
     component: _7ca2e046,

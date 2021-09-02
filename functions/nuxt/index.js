@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_faaa582e from 'nuxt_plugin_plugin_faaa582e' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_d81aceaa from 'nuxt_plugin_plugin_d81aceaa' // Source: .\\vuetify\\plugin.js (mode: 'all')
 import nuxt_plugin_axios_1eda1d8c from 'nuxt_plugin_axios_1eda1d8c' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_buefy_3e8dc646 from 'nuxt_plugin_buefy_3e8dc646' // Source: .\\buefy.js (mode: 'all')
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ..\\plugins\\firebase.js (mode: 'all')
@@ -85,7 +86,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"firebase-me","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@5.8.55\u002Fcss\u002Fmaterialdesignicons.min.css","rel":"preload","as":"style","onload":"this.rel='stylesheet'"}],"style":[],"script":[]},
+    head: {"title":"firebase-me","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@5.8.55\u002Fcss\u002Fmaterialdesignicons.min.css","rel":"preload","as":"style","onload":"this.rel='stylesheet'"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
 
     store,
     router,
@@ -216,6 +217,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_faaa582e === 'function') {
     await nuxt_plugin_plugin_faaa582e(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_plugin_d81aceaa === 'function') {
+    await nuxt_plugin_plugin_d81aceaa(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_1eda1d8c === 'function') {

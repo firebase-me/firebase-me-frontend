@@ -1,5 +1,12 @@
 [
   {
+    "name": "contactUs",
+    "path": "/contactUs",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\contactUs.vue",
+    "chunkName": "pages/contactUs",
+    "_name": "_5453ab5c"
+  },
+  {
     "name": "faq",
     "path": "/faq",
     "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\faq\\\\index.vue",
@@ -33,6 +40,13 @@
     "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\projects.vue",
     "chunkName": "pages/projects",
     "_name": "_365422b6"
+  },
+  {
+    "name": "users",
+    "path": "/users",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\users\\\\index.vue",
+    "chunkName": "pages/users/index",
+    "_name": "_06721686"
   },
   {
     "name": "admin-articles",
@@ -117,6 +131,13 @@
     "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\articles\\\\view\\\\_id.vue",
     "chunkName": "pages/articles/view/_id",
     "_name": "_7600684c"
+  },
+  {
+    "name": "users-userId",
+    "path": "/users/:userId",
+    "component": "C:\\\\Firebase Me\\\\firebase-me-frontend\\\\source\\\\pages\\\\users\\\\_userId\\\\index.vue",
+    "chunkName": "pages/users/_userId/index",
+    "_name": "_077a25c9"
   },
   {
     "name": "index",
